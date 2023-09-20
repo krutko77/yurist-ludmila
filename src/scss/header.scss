@@ -8,22 +8,25 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-		padding: 0 20px;
+		padding: 10px 20px;
 		max-width: 1300px;
-      min-height: 80px;
+      min-height: rem(80);
+
+		@media (max-width: $pc) {
+			min-height: calc(rem(70) + 10*((100vw - 768px) / (1200 - 768)));			
+      }
 
 		@media (max-width: $tablet) {
-			min-height: calc(70px + 10*((100vw - 768px) / (1260 - 768)));
-
 			padding: 0 15px;
-      }
+		}
    }
 
    &__logo {
 		width: 240px;
+		margin-right: em(20, 14);
 
 		@media (max-width: $mobile) {
-			width: calc(210px + 40*((100vw - 768px) / (1260 - 768)));
+			width: calc(210px + 40*((100vw - 768px) / (1200 - 768)));
       }
 	}
 	 
@@ -35,7 +38,7 @@
    
    .menu {
       &__body {
-         @media (max-width: $tablet) {
+         @media (max-width: $mobile) {
          position: fixed;
          top: 0;
          left: -100%;
@@ -57,7 +60,7 @@
          align-items: center;
          justify-content: space-between;
         
-         @media (max-width: $tablet) {
+         @media (max-width: $mobile) {
          flex-direction: column;
          }
       } 
@@ -68,38 +71,38 @@
       }
 
       &__item:not(:last-child) {
-         margin-right: 30px;
+         margin-right: rem(30);
 
          @media (max-width: $pc) {
-            margin-right: calc(20px + 10*((100vw - 768px) / (1260 - 768)));
+            margin-right: calc(rem(20) + 10*((100vw - 768px) / (1200 - 768)));
          }
 
-         @media (max-width: $tablet) {
-            margin: 0 0 30px;
+         @media (max-width: $mobile) {
+            margin: 0 0 em(30, 22);
             }
       }
 
       &__link {
 			font-size: rem(14);
-         padding: 7px 7px 5px;
+         padding: em(7, 14) em(7, 14) em(5, 14);
          text-transform: uppercase;
          cursor: pointer; 
-         display: block;         
+         display: block;
 
          @media (max-width: $pc) {
-            font-size: calc(12px + 2*((100vw - 768px) / (1260 - 768)));
+            font-size: calc(rem(12) + 2*((100vw - 768px) / (1260 - 768)));
          }
          
-         @media (max-width: $tablet) {
-            font-size: 22px;
+         @media (max-width: $mobile) {
+            font-size: rem(22);
             }
       } 
 
       &__link::before,
       &__link::after {
-         content: '';    
+         content: '';
          position: absolute; 
-         top: 23px;    
+         top: rem(23);
          width: 0;    
          height: 2px;    
          background: $accentColor;    
@@ -107,17 +110,17 @@
       }
 
       &__link::before {
-         left: calc(50% - 3.5px);      
+         left: calc(50% - rem(3.5));      
       }
 
       &__link::after {
-         right: calc(50% - 3.5px);      
+         right: calc(50% - rem(3.5));      
       }
 
 		@media (any-hover: hover) {
 			&__link:hover::before,
 			&__link:hover::after {
-				width: calc(50% - 3.5px);
+				width: calc(50% - rem(3.5));
 			}
 		}    
       
@@ -132,7 +135,7 @@
 ._header-scroll {
    position: fixed;
    top: -200px;
-	min-height: 50px;
+	min-height: rem(70);
 }
 
 ._header-show {
@@ -144,7 +147,7 @@
 //Burger
 .icon-menu {
 	display: none;
-	@media (max-width: $tablet) {
+	@media (max-width: $mobile) {
 		display: block;
 		position: relative;
 		width: rem(30);

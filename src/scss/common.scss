@@ -1,1 +1,102 @@
-// Заголовки, загальні БЕМ блоки та інше...
+// Section
+section {
+	padding: rem(90) 0 rem(90);
+
+	@media (max-width:$pc){
+		 padding-top: calc(rem(50) + 40*((100vw - 320px) / (1200 - 320)));
+		 padding-bottom: calc(rem(50) + 40*((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+// Заголовки
+.title {
+	font-family: "Merriweather";
+	font-weight: 700;
+	text-align: center;	
+	text-transform: uppercase;
+}
+
+
+h2 {
+	font-size: rem(40);
+	line-height: math.div(48, 40);
+	margin-bottom: em(50, 40);
+
+	@media (max-width:$pc){
+		font-size:  calc(rem(27) + 13*((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+// Общий текст
+.text {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: rem(20);
+	line-height: 1.5;
+
+	@media (max-width:$pc){
+		font-size:  calc(rem(16) + 2*((100vw - 320px) / (1200 - 320)));
+ }
+}
+
+// Отступы
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;	
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+
+	@media (max-width: $pc) {
+      margin-bottom: calc(20px + 10*((100vw - 320px) / (1260 - 320)));
+   }
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px;
+
+	@media (max-width: $pc) {
+      margin-bottom: calc(25px + 15*((100vw - 320px) / (1260 - 320)));
+   }
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px;
+
+	@media (max-width: $pc) {
+      margin-bottom: calc(30px + 20*((100vw - 320px) / (1260 - 320)));
+   }
+}
+
+.margin-bottom-60 {
+	margin-bottom: 60px;
+
+	@media (max-width: $pc) {
+      margin-bottom: calc(35px + 25*((100vw - 320px) / (1260 - 320)));
+   }
+}
+
+.margin-bottom-120 {
+	margin-bottom: 120px;
+	 
+	@media (max-width: $tablet) {
+		margin-bottom: 100px;
+	}
+
+	@media (max-width: $mobileSmall) {
+		margin-bottom: 50px;
+	}
+}
+
+
+
+
+
+
+.ul-style {
+	margin-left: 20px;
+}
