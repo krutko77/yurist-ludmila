@@ -8,15 +8,34 @@
 			@@include('html/_header.htm',{})
 			<main class="page">
 				<section class="home" data-watch="navigator" data-watch-threshold="0.48">
-					<div class="home__container">
-						<div class="home__wrapper">
+					<div class="home__container home__container--flex">
+						<!-- <div class="home__wrapper"> -->
 							<div class="home__content">
-								<div class="home__offer"></div>
-								<div class="home__img-wrap">
-									<img src="@img" alt="фото автора">
+								<div class="home__offer-wrap margin-bottom-50">
+									<div class="home__offer">
+										<p class="home__name title margin-bottom-30">Людмила Валентинова</p>
+										<h1 class="home__title title margin-bottom-20">Юрист для нутрициологов</h1>
+										<ul class="home__list list ul-style">
+											<li class="list__item">
+												<svg viewBox="0 0 520 520" aria-hidden="true"
+												focusable="false">
+													<path d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z"></path>
+												</svg>
+												<p class="list__text text">Экспертиза договоров и других документов</p>
+											</li>
+											
+										</ul>
+									</div>
+									<div class="home__img-wrap">
+										<img class="home__img" src="@img/main-foto.png" alt="фото автора">
+									</div>
+								</div>
+								<div class="home__action action">
+									<p class="action__text text margin-bottom-40">Получите своевременную профессиональную консультацию!</p>
+									<a class="actio__btn button button-accent" href="https://t.me/liudmilavalentinova" target="_blank" data-watch data-watch-once>Записаться</a>
 								</div>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</section>
 				<section class="services" data-watch="navigator" data-watch-threshold="0.48">
@@ -43,7 +62,7 @@
 				<section class="contact" data-watch="navigator" data-watch-threshold="0.48">
 					<div class="contact__container">
 						<div class="contact__wrapper">
-							<H2 class="contact__title title">Обо мне</H2>
+							<H2 class="contact__title title">Контакты</H2>
 						</div>
 					</div>
 				</section>
