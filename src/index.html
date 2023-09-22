@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="home" data-watch="navigator" data-watch-threshold="0.48">
-					<div class="home__container home__container--flex">
-						<!-- <div class="home__wrapper"> -->
-							<div class="home__content">
-								<div class="home__offer-wrap margin-bottom-50">
-									<div class="home__offer">
-										<p class="home__name title margin-bottom-30">Людмила Валентинова</p>
-										<h1 class="home__title title margin-bottom-20">Юрист для нутрициологов</h1>
-										<ul class="home__list list ul-style">
-											<li class="list__item margin-bottom-10">
-												<svg viewBox="0 0 520 520" aria-hidden="true"
-												focusable="false">
-													<path d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z"></path>
-												</svg>
-												<p class="list__text text">Эффективная защита от недобросовестных клиентов</p>
-											</li>
-											<li class="list__item margin-bottom-10">
-												<svg viewBox="0 0 520 520" aria-hidden="true"
-												focusable="false">
-													<path d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z"></path>
-												</svg>
-												<p class="list__text text">Оптимальный выбор формы легализации деятельности</p>
-											</li>
-											<li class="list__item margin-bottom-10">
-												<svg viewBox="0 0 520 520" aria-hidden="true"
-												focusable="false">
-													<path d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z"></path>
-												</svg>
-												<p class="list__text text">Профессиональное выявление юридических «подводных камней» в деятельности нутрициолога</p>
-											</li>
-											<li class="list__item margin-bottom-10">
-												<svg viewBox="0 0 520 520" aria-hidden="true"
-												focusable="false">
-													<path d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z"></path>
-												</svg>
-												<p class="list__text text">Экспертиза и разработка договоров и документов для работы в онлайн и офлайн</p>
-											</li>
-											
-										</ul>
-									</div>
-									<div class="home__img-wrap">
-										<img class="home__img" src="@img/main-foto.png" alt="фото автора">
-									</div>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="home" data-watch="navigator" data-watch-threshold="0.48">
+				<div class="home__container">
+					<div class="home__content">
+						<div class="home__offer-wrap margin-bottom-40">
+							<!-- <div class="home__offer"> -->
+								<div class="home__name-block">
+									<p class="home__name title margin-bottom-30">Людмила Валентинова</p>
+									<h1 class="home__title title margin-bottom-20">Юрист для нутрициологов</h1>
 								</div>
-								<div class="home__action action">
-									<p class="action__text text margin-bottom-40">Получите своевременную профессиональную консультацию!</p>
-									<a class="actio__btn button button-accent" href="https://t.me/liudmilavalentinova" target="_blank" data-watch data-watch-once>Записаться</a>
+								<ul class="home__list list ul-style margin-bottom-10">
+									<li class="list__item margin-bottom-10">
+										<svg viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+											<path
+												d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z">
+											</path>
+										</svg>
+										<p class="list__text text">Эффективная защита от недобросовестных клиентов</p>
+									</li>
+									<li class="list__item margin-bottom-10">
+										<svg viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+											<path
+												d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z">
+											</path>
+										</svg>
+										<p class="list__text text">Оптимальный выбор формы легализации деятельности</p>
+									</li>
+									<li class="list__item margin-bottom-10">
+										<svg viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+											<path
+												d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z">
+											</path>
+										</svg>
+										<p class="list__text text">Профессиональное выявление юридических «подводных камней» в
+											деятельности нутрициолога</p>
+									</li>
+									<li class="list__item margin-bottom-10">
+										<svg viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+											<path
+												d="m161.688 453.165a10 10 0 0 1 -9.039-5.721l-119.687-252.835a10 10 0 0 1 15.285-12.088l114 91.2 310.235-205.221a10 10 0 0 1 13.086 14.876l-316.311 366.324a10 10 0 0 1 -7.569 3.465z">
+											</path>
+										</svg>
+										<p class="list__text text">Экспертиза и разработка договоров и документов для работы в
+											онлайн и офлайн</p>
+									</li>
+								</ul>
+							<!-- </div> -->
+							<div class="home__img-block">
+								<div class="home__img-wrap">
+									<img class="home__img" src="@img/main-foto.png" alt="фото автора">
 								</div>
 							</div>
-						<!-- </div> -->
-					</div>
-				</section>
-				<section class="services" data-watch="navigator" data-watch-threshold="0.48">
-					<div class="services__container">
-						<div class="services__wrapper">
-							<H2 class="services__title title">Услуги</H2>
+						</div>
+						<div class="home__action action">
+							<p class="action__text text">Получите своевременную профессиональную консультацию!
+							</p>
+							<a class="actio__btn button button-accent" href="https://t.me/liudmilavalentinova" target="_blank"
+								data-watch data-watch-once>Записаться</a>
 						</div>
 					</div>
-				</section>
-				<section class="about" data-watch="navigator" data-watch-threshold="0.48">
-					<div class="about__container">
-						<div class="about__wrapper">
-							<H2 class="about__title title">Обо мне</H2>
-						</div>
+
+				</div>
+			</section>
+			<section class="services" data-watch="navigator" data-watch-threshold="0.48">
+				<div class="services__container">
+					<div class="services__wrapper">
+						<H2 class="services__title title">Услуги</H2>
 					</div>
-				</section class="questions" data-watch="navigator" data-watch-threshold="0.48">
-				<section>
-					<div class="questions__container">
-						<div class="questions__wrapper">
-							<H2 class="questions__title title">Часто задаваемые<br>вопросы</H2>
-						</div>
+				</div>
+			</section>
+			<section class="about" data-watch="navigator" data-watch-threshold="0.48">
+				<div class="about__container">
+					<div class="about__wrapper">
+						<H2 class="about__title title">Обо мне</H2>
 					</div>
-				</section>
-				<section class="contact" data-watch="navigator" data-watch-threshold="0.48">
-					<div class="contact__container">
-						<div class="contact__wrapper">
-							<H2 class="contact__title title">Контакты</H2>
-						</div>
+				</div>
+			</section class="questions" data-watch="navigator" data-watch-threshold="0.48">
+			<section>
+				<div class="questions__container">
+					<div class="questions__wrapper">
+						<H2 class="questions__title title">Часто задаваемые<br>вопросы</H2>
 					</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+				</div>
+			</section>
+			<section class="contact" data-watch="navigator" data-watch-threshold="0.48">
+				<div class="contact__container">
+					<div class="contact__wrapper">
+						<H2 class="contact__title title">Контакты</H2>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
