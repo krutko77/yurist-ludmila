@@ -1,4 +1,4 @@
-// Section
+// Секции
 section {
 	padding: rem(170) 0 rem(90);
 
@@ -9,11 +9,15 @@ section {
 }
 
 // Заголовки
-.title {
+.title, .subtitle {
 	font-family: "Merriweather";
 	font-weight: 700;
 	text-align: center;	
 	text-transform: uppercase;
+}
+
+.subtitle {
+	text-align: left;	
 }
 
 
@@ -24,6 +28,16 @@ h2 {
 
 	@media (max-width:$pc){
 		font-size:  calc(rem(27) + 13*((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+h3 {
+	font-size: rem(28);
+	line-height: math.div(34, 28);	
+	text-align: left;
+
+	@media (max-width:$pc){
+		font-size:  calc(rem(20) + 8*((100vw - 320px) / (1200 - 320)));
 	}
 }
 
@@ -42,10 +56,18 @@ h2 {
 // Отступы
 .margin-bottom-10 {
 	margin-bottom: 10px;
+
+	@media (max-width: $pc) {
+      margin-bottom: calc(7px + 3*((100vw - 320px) / (1260 - 320)));
+   }
 }
 
 .margin-bottom-20 {
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
+
+	@media (max-width: $pc) {
+      margin-bottom: calc(15px + 5*((100vw - 320px) / (1260 - 320)));
+   }
 }
 
 .margin-bottom-30 {
@@ -93,7 +115,7 @@ h2 {
 }
 
 // Для списков
-.ul-style {
+.ul-margin-left {
 	margin-left: 10px;
 }
 

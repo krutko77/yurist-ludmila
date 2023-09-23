@@ -1,6 +1,6 @@
 // home
 .home {
-	padding: 80px 0 20px;
+	padding: 80px 0 30px;
 	min-height: 100vh;
 	background: linear-gradient(180deg, #323a47, #3c4451, #464e5c, #505867, #5a6272, #646d7d, #6f7888, #7a8394);
 	color: $textSecondaryColor;
@@ -9,26 +9,8 @@
 	align-items: center;
 
 	@media (max-width:$mobile){
-		padding: 70px 0 20px;
+		padding: 70px 0 30px;
 	}
-
-	// .home__content
-
-	&__content {
-		// display: flex;
-		// flex-direction: column;
-	}
-
-	// .home__offer-wrap
-
-	// &__offer-wrap {
-	// 	display: flex;
-	// 	border-bottom: 3px solid $textSecondaryColor;
-
-	// 	@media (max-width: $tablet) {
-	// 		flex-direction: column-reverse;
-	// 	}
-	// }
 
 	&__offer-wrap {
 		display: grid;
@@ -61,14 +43,6 @@
 		grid-area: photo;
 	}
 
-
-	// .home__offer
-
-	// &__offer {
-	// 	flex: 0 1 50%;
-	// 	padding-top: 20px;
-	// }
-
 	&__name-block {
 		padding-top: 20px;
 	}
@@ -79,6 +53,7 @@
 		font-size: rem(70);
 		line-height: 1.2;
 		text-align: left;
+		max-width: em(590, 70);
 
 		@media (max-width:$pc){
 			font-size:  calc(rem(35) + 35*((100vw - 320px) / (1200 - 320)));
@@ -111,13 +86,13 @@
 		// flex: 0 1 50%;
 		max-width: 590px;
 
-		// @media (max-width:$mobileSmall){
-		// 	max-width: 330px;
-		// }
-
-		@media (max-width:$pc) {
-			max-width:  330px + 260*((100vw - 320px) / (1200 - 320));
+		@media (max-width:$tablet){
+			max-width: 430px;
 		}
+
+		@media (max-width:$mobileSmall){
+			max-width: 330px;
+		}		
 	}
 
 	// .home__img
@@ -125,30 +100,34 @@
 		width: 100%;
 		object-fit: cover;
 		aspect-ratio: 585/490;
-		vertical-align: text-bottom;
 	}
-}
 
-.list {
-	@media (max-width:$tablet){
-		border-top: 3px solid $textSecondaryColor;
-		padding-top: em(20, 20);
-	}
+	.list {
+		@media (max-width:$tablet){
+			border-top: 3px solid $textSecondaryColor;
+			padding-top: em(25, 20);
+			margin: 0 0 10px 10px;
+		}
 
 		// .list__item
 
-	&__item {
-		display: flex;		
-	}
+		&__item {
+			display: flex;
 
-	svg {
-		position: relative;
-		top: 4px;
-		flex-shrink: 0;
-		height: 20px;
-		width: 20px;
-		margin-right: 4px;
-		fill: $accentColor;
+			span {
+				text-transform: uppercase;
+			}
+		}
+
+		svg {
+			position: relative;
+			top: 4px;
+			flex-shrink: 0;
+			height: 20px;
+			width: 20px;
+			margin-right: 4px;
+			fill: $accentColor;
+		}
 	}
 }
 
@@ -162,8 +141,9 @@
 
 	@media (max-width:$pc){
 		font-size:  calc(rem(20) + 5*((100vw - 320px) / (1200 - 320)));
-   	}
+   
 		margin-bottom: calc(10px + 30*((100vw - 320px) / (1200 - 320)));
+		}
 	}
 }
 

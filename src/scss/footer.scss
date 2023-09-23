@@ -48,9 +48,9 @@
 	height: 65px;
 	border-radius: 33px;
 
-	@media (max-width: $mobile) {
+	@media (max-width: $tablet) {
 		right: 25px;
-		bottom: 40px;
+		bottom: 25px;
 	}
 
 	@media (max-width: $mobileSmall) {
