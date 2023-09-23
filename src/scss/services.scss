@@ -23,8 +23,9 @@
 
 	// .services__list
 
-	&__list {
+	&__list li {
 		list-style-type: square;
+		margin-left: 20px;
 	}
 
 	// .services__slider
@@ -43,7 +44,7 @@
    padding: 0 40px 50px;
 
    @media (max-width: $mobileSmall) {
-      padding: 0 0 35px;
+      padding: 0 10px 35px;
    }
 
    &__image {
@@ -52,6 +53,8 @@
 
    &__image img {
 		width: 100%;
+		max-width: 100%;
+		object-fit: cover;
 		aspect-ratio: 350/500;
    }
 }
