@@ -149,8 +149,11 @@ body {
 
 // Підключення стилів окремих блоків
 @import "header";
+@import "action-block";
+@import "home";
+@import "services";
+@import "about";
 @import "footer";
 
 // Підключення стилів окремих сторінок
-@import "home";
-@import "services";
+

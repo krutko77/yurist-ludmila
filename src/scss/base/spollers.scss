@@ -15,11 +15,12 @@
 	width: 100%;
 	cursor: default;
 	text-align: left;
-	border: 1px solid #eee;
+	border: 2px solid $accentColor;
 	padding: rem(10) rem(15);
 	border-radius: rem(5);
 	position: relative;
 	list-style: none;
+	margin-bottom: em(7, 20);
 	&::marker {
 	}
 	._spoller-init & {
@@ -88,5 +89,5 @@
 .spollers__body {
 	padding: rem(20);
 	border-radius: rem(5);
-	border: 1px solid #eee;
+	border: 1px solid $textMainColor;
 }

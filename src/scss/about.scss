@@ -1,0 +1,19 @@
+//about
+.about {  
+	padding: 0;
+   background: url("../img/bg-about-80.jpg") center / cover no-repeat;	
+   
+   &__wrapper {
+      padding: 150px 0 40px;
+
+		@media (max-width: $tablet) {
+			padding: 160px 0 30px;			
+		}
+	
+		@media (max-width: $mobileSmall) {
+			padding: 60px 0 0;
+		}
+   }
+
+   
+}
