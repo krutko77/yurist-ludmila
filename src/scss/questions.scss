@@ -1,9 +1,9 @@
 // questions
 
+.questions {
 
-
-.spollers {
-	&__list {
-		margin-left: em(25, 20);
-	}	
+	.list li {
+		list-style-type: disc;
+	}
 }
+

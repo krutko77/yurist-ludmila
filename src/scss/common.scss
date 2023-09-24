@@ -42,6 +42,13 @@ h3 {
 	}
 }
 
+// Картинки
+img {
+	width: 100%;
+	max-width: 100%;
+	object-fit: cover;	
+}
+
 // Общий текст
 .text {
 	font-family: "Roboto";
