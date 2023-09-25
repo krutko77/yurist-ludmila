@@ -178,7 +178,7 @@ import "./files/sliders.js";
 // Спостерігач за об'єктами з атрибутом data-watch
 // Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сніппет(HTML):
-import './libs/watcher.js'
+import './libs/watcher.js';
 
 // Модуль поекранної прокрутки
 // Документація: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
@@ -188,7 +188,7 @@ import './libs/watcher.js'
 // Модуль паралаксу
 // Документація: https://template.fls.guru/template-docs/paralaks-pri-skroli.html
 // Сніппет(HTML):
-import './libs/parallax.js'
+import './libs/parallax.js';
 
 // Функції роботи скролом
 import * as flsScroll from "./files/scroll/scroll.js";

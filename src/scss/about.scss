@@ -20,6 +20,10 @@
 		flex-direction: column;		
 	}
 
+	&__img-box img {
+		aspect-ratio: 400/591;
+	}
+
 	&__subtitle {
 		align-self: center;
 	}
@@ -28,6 +32,10 @@
 		max-width: 600px;
 		text-align: center;
 		align-self: center;
+
+		img {
+			aspect-ratio: 600/414;
+		}
 	}
 
 	figcaption {
@@ -37,9 +45,5 @@
 		@media (max-width:$pc){
 			font-size:  calc(rem(13) + 3*((100vw - 320px) / (1200 - 320)));
    	}
-	}
-
-	img {
-		aspect-ratio: 600/414;
-	}
+	}	
 }

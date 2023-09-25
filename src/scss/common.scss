@@ -188,3 +188,45 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 	transform: translate(1px, 2px);
 	transition: transform 0.3s ease;
 }
+
+// Обтекание текстом
+.float-left {
+	float: left;
+	margin: 0 em(20, 20) em(10, 20) 0;
+
+	@media (max-width:$mobileSmall){
+		margin: 0 em(15, 20) em(10, 20) 0;
+	}
+}
+
+.float-right {
+	float: right;
+	margin: 0 0 em(10, 20) em(20, 20);
+
+	@media (max-width:$mobileSmall){
+		margin: 0 0 em(10, 20) em(15, 20);
+	}
+}
+
+// .float-left, .float-right {
+// 	@media (max-width:$mobileSmall){
+// 		clear: both; 
+// 		margin: 0 0 20px;
+// 	}
+// }
+
+.clearfix {
+	display: flow-root;
+}
+
+.img-box {
+	width: 20%;
+
+	@media (max-width:$tablet){
+		width: 35%; 
+	}
+
+	@media (max-width:$mobileSmall){
+		width: 40%; 
+	}
+}
