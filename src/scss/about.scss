@@ -1,22 +1,42 @@
 //about
 .about {  
 	padding: 0;
-   background: url("../img/bg-about-80.jpg") center / cover no-repeat;	
+   background: url("../img/bg-about-85.jpg") center / cover no-repeat;	
    
    &__wrapper {
-      padding: 150px 0 40px;
+      padding: 70px 0 40px;
 
 		@media (max-width: $tablet) {
-			padding: 160px 0 30px;			
+			padding: 40px 0 30px;
 		}
 	
 		@media (max-width: $mobileSmall) {
-			padding: 60px 0 0;
+			padding: 10px 0 0;
 		}
    }
 
    &__content {
+		display: flex;
+		flex-direction: column;		
+	}
+
+	&__subtitle {
+		align-self: center;
+	}
+
+	figure {
+		max-width: 600px;
 		text-align: center;
+		align-self: center;
+	}
+
+	figcaption {
+		padding: 0 em(20, 20);
+		font-size: rem(16);		
+
+		@media (max-width:$pc){
+			font-size:  calc(rem(13) + 3*((100vw - 320px) / (1200 - 320)));
+   	}
 	}
 
 	img {

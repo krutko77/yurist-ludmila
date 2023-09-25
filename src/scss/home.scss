@@ -29,6 +29,10 @@
 		}
 
 		border-bottom: 3px solid $textSecondaryColor;
+
+		@media (max-width:$mobileSmall){
+			border-bottom: 2px solid $textSecondaryColor;
+		}
 	}
 
 	&__name-block {
@@ -54,9 +58,11 @@
 		line-height: 1.2;
 		text-align: left;
 		max-width: em(590, 70);
+		margin-bottom: 20px;
 
 		@media (max-width:$pc){
 			font-size:  calc(rem(35) + 35*((100vw - 320px) / (1200 - 320)));
+			margin-bottom: calc(10px + 10*((100vw - 320px) / (1260 - 320)));
 		}
 	}
 
@@ -68,9 +74,11 @@
 		line-height: 1.2;
 		text-align: left;
 		color: $accentColor;
+		margin-bottom: 20px;
 
 		@media (max-width:$pc){
-			font-size:  calc(rem(21) + 14*((100vw - 320px) / (1200 - 320)));
+			font-size:  calc(rem(18) + 17*((100vw - 320px) / (1200 - 320)));
+			margin-bottom: calc(10px + 10*((100vw - 478px) / (1260 - 478)));
 		}
 	}
 
@@ -92,7 +100,7 @@
 		}
 
 		@media (max-width:$mobileSmall){
-			max-width: 330px;
+			max-width: 290px;
 		}
 	}
 
@@ -108,6 +116,12 @@
 			border-top: 3px solid $textSecondaryColor;
 			padding-top: em(25, 20);
 			margin: 0 0 10px 10px;
+		}
+
+		@media (max-width:$mobileSmall){
+			border-top: 2px solid $textSecondaryColor;
+			padding-top: em(15, 20);
+			margin: 0 0 0 10px;
 		}
 
 		// .list__item

@@ -44,7 +44,6 @@ h3 {
 
 // Картинки
 img {
-	width: 100%;
 	max-width: 100%;
 	object-fit: cover;	
 }
@@ -59,6 +58,27 @@ img {
 	@media (max-width:$pc){
 		font-size:  calc(rem(16) + 2*((100vw - 320px) / (1200 - 320)));
    }
+}
+
+// Ссылки тексте
+.link {
+	position: relative;
+	display: inline-block;
+	transition: color 0.3s ease;
+	&::before {
+         content: '';
+         position: absolute;
+         top: 93%;
+         width: 100%;
+         height: 2.7px;
+         background: $accentColor;
+      }
+
+		@media (any-hover: hover) {
+		&:hover {
+		color: $accentColor;
+		}
+	}
 }
 
 // Отступы
@@ -123,7 +143,7 @@ img {
 }
 
 // Кнопки
-button:not(.swiper-button-prev, .swiper-button-next), .button {
+button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 	display: inline-block;
 	text-transform: uppercase;
 	padding: em(12, 16) em(20, 16) em(10, 16);
