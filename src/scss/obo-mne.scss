@@ -18,9 +18,13 @@
 
    &__title {
 		text-align: center;
+		font-size: rem(40);
+		font-weight: 900;
+		line-height: math.div(52, 40);
+		margin-bottom: em(50, 40);
 
-		&::after {
-			left: 24%;
-      }
+	@media (max-width:$pc){
+		font-size:  calc(rem(27) + 13*((100vw - 320px) / (1200 - 320)));
+	}
 	}
 }

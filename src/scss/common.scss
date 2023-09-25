@@ -153,7 +153,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 	color: $textMainColor;
 }
 
-.button-accent {
+.button-accent, .button-back {
 	background-color: $accentColor;
 	border: 2px solid transparent;
 	opacity: 0;
@@ -165,8 +165,13 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 					opacity 0.8s ease;
 }
 
+.button-back {
+	opacity: 1;
+	transform: scale(1);
+}
+
 @media (any-hover: hover) {
-	.button-accent:hover {
+	.button-accent:hover, .button-back:hover {
 		color: $accentColor;
 		background-color: transparent;
 		border-color: $accentColor; 
@@ -178,7 +183,8 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 	transform: scale(1);	
 }
 
-.button-accent._watcher-view:active {
+.button-accent._watcher-view:active,
+.button-back:active {
 	transform: translate(1px, 2px);
 	transition: transform 0.3s ease;
 }
