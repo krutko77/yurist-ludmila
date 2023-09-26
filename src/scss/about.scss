@@ -43,7 +43,7 @@
 		font-size: rem(16);		
 
 		@media (max-width:$pc){
-			font-size:  calc(rem(13) + 3*((100vw - 320px) / (1200 - 320)));
+			font-size: calc(rem(13) + 3*((100vw - 320px) / (1200 - 320)));
    	}
 	}
 }
