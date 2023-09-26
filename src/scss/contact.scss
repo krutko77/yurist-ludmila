@@ -1,0 +1,30 @@
+// contact
+.contact {
+
+	.icon {
+		width: em(48, 20);
+		height: em(48, 20);
+		opacity: 0.7;
+		transition: opacity 0.3s ease;
+	}
+
+	@media (any-hover: hover) {
+		.icon:hover {
+			opacity: 1;
+		}
+	}
+	
+	&__link-icon:not(:last-child) {
+		margin-right: em(20, 20);
+	}
+
+	.list__item-link {
+		display: inline-flex;
+	}
+
+	.list__item-link::before {
+		font-size: rem(22);
+		margin: em(2, 20) em(7, 20) 0px 0px;
+		color: $accentColor;
+	}
+}

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/_head.htm',{
-"title":"Юрист для нутрициологов | Людмила Валентинова"
+"title":"Юрист для нутрициологов | Людмила Валентинова",
+"description": "Юрист для нутрициологов. Закрываю риски и сберегаю деньги надежными документами"
 })
 
 <body>
@@ -94,42 +95,42 @@
 							<!-- Слайд -->
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/1.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/1.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/2.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/2.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/3.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/3.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/4.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/4.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/5.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/5.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/6.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/6.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/7.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/7.jpg" alt="картинка">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img src="@img/slider/8.jpg" alt="картинка">
+									<img class="swiper__img" src="@img/slider/8.jpg" alt="картинка">
 								</div>
 							</div>
 						</div>
@@ -163,7 +164,7 @@
 							<div class="about__content">
 								<div class="clearfix">
 									<div class="about__img-box img-box float-left">
-										<img src="@img/about-photo.jpg" alt="фото автора">
+										<img class="about__photo" src="@img/about-photo.jpg" alt="фото автора">
 									</div>
 									<p class="about__text margin-bottom-20">Я, Людмила Валентинова.<br>Практикующий юрист и нутрициолог. Опыт моей юридической практики 23 года, а опыт практической работы нутрициологом - 5 лет.</p>
 									<p class="about__text margin-bottom-20">Совмещая деятельность нутрициолога и юриста, я с юридической скрупулёзностью изучила тонкости и подводные камни в работе нутрициологов. Это позволяет мне эффективно оказывать юридическую помощь в этой области.</p>
@@ -174,16 +175,16 @@
 								</div>
 								<h3 class="about__subtitle subtitle margin-bottom-40">Моё образование</h3>
 								<figure class="about__image margin-bottom-30">
-									<img src="@img/about-1.jpg" alt="фото диплома">
+									<img class="about__img" src="@img/about-1.jpg" alt="фото диплома">
 									<figcaption>Диплом Белорусского института правоведения (Минск, 1997 г.)
 										Присвоена квалификация - Юрист</figcaption>
 								</figure>
 								<figure class="about__image margin-bottom-30">
-									<img src="@img/about-2.jpg" alt="фото диплома">
+									<img class="about__img" src="@img/about-2.jpg" alt="фото диплома">
 									<figcaption>Диплом Белорусского государственного университета физической культуры (Минск, 2004 г.). Присвоена квалификация - Преподаватель физической культуры / Инструктор по лечебной физической культуре.</figcaption>
 								</figure>
 								<figure class="about__image">
-									<img src="@img/about-3.jpg" alt="фото диплома">
+									<img class="about__img" src="@img/about-3.jpg" alt="фото диплома">
 									<figcaption>Диплом Университета образовательной медицины "PreventAge" (Москва, 2021 г.). Присвоена квалификация - Специалист по модификации образа жизни и немедикаментозному оздоровлению / НealthCoach</figcaption>
 								</figure>
 							</div>
@@ -313,8 +314,36 @@
 				<div class="contact__container">
 					<div class="contact__wrapper">
 						<h2 class="contact__title title">Контакты</h2>
-					   <p class="contact__text margin-bottom-20">Валентинова Людмила Константиновна</p>
-						<p class="contact__text">Самозанятая, зарегистрирована в ФНС РФ в качестве налогоплательщика налога на профессиональный доход с 22.07.2022 г. ИНН 165929002370</p>
+						<ul class="contact__list list">
+							<li class="list__item margin-bottom-30"><p class="list__item-name">Валентинова Людмила Константиновна</p></li>
+							<li class="list__item margin-bottom-30"><a href="tel:79872294675" class="list__item-link link _icon-phone-flip">+7 987 229 46 75</a></li>
+							<li class="list__item margin-bottom-30"></li>
+							<li class="list__item margin-bottom-30"></li>
+							<li class="list__item margin-bottom-30"></li>
+						</ul>
+					   
+						<div class="contact__location margin-bottom-30">
+
+						</div>
+						<div class="contact__email margin-bottom-30">
+
+						</div>
+						<p class="contact__text margin-bottom-30"">Самозанятая, зарегистрирована в ФНС РФ в качестве налогоплательщика налога на профессиональный доход с 22.07.2022 г. ИНН 165929002370</p>
+						
+
+						</div>
+						<h3 class="contact__subtitle subtitle margin-bottom-20"">Консультации онлайн</h3>
+						<p class="contact__text margin-bottom-20">Для организации общения в формате онлайн пожалуйста пишите мне в мессенджеры:</p>
+						<a class="contact__link-icon" href="https://t.me/liudmilavalentinova" target="_blank">
+							<svg class="icon">
+								<use xlink:href="@img/icons/icons.svg#telegram"></use>
+							</svg>
+						</a>
+						<a class="contact__link-icon" href="whatsapp://send?phone=79872294675" target="_blank">
+							<svg class="icon">
+								<use xlink:href="@img/icons/icons.svg#whatsapp"></use>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</section>
