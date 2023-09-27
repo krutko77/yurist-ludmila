@@ -6,16 +6,18 @@
 		width: 48px;
 		height: 48px;
 		opacity: 0.7;
-		transition: opacity 0.3s ease;
-
-		@media (max-width: $tablet) {
-			opacity: 1;
-		}
+		transition: opacity 0.3s ease;		
 	}
 
 	@media (any-hover: hover) {
 		.icon:hover {
 			opacity: 1;
+		}
+	}
+
+	@media (any-hover: none) {
+		.icon {
+		opacity: 1;
 		}
 	}
 	

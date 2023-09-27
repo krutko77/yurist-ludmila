@@ -21,7 +21,8 @@
 	}
 
 	&__photo {
-		aspect-ratio: 400/591;
+		width: 100%;
+		height: auto;
 	}
 
 	&__subtitle {
@@ -29,7 +30,8 @@
 	}
 
 	&__img {
-		aspect-ratio: 600/414;
+		width: 100%;
+		height: auto;
 	}
 
 	figure {

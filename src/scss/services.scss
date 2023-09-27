@@ -22,7 +22,9 @@
    }
 
    &__img {		
-		aspect-ratio: 350/500;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
    }
 }
 
