@@ -28,7 +28,11 @@
             "list";
       }
 
-      margin-bottom: 60px;
+      margin-bottom: calc(30px + 30*((100vw - 1400px) / (1920 - 1400)));
+
+      @media (max-width:$mobileSmall) {
+         margin-bottom: 20px;
+      }
 
       border-bottom: 3px solid $textSecondaryColor;
 
@@ -65,7 +69,7 @@
       transform: translateY(50px);
 
       @media (max-width: $fullHD) {
-         font-size: calc(rem(35) + 35*((100vw - 320px) / (1920 - 320)));         
+         font-size: calc(rem(35) + 35*((100vw - 320px) / (1920 - 320)));
       }
    }
 
@@ -109,13 +113,7 @@
    // .home__img-wrap
 
    &__img-wrap {
-      // max-width: 590px;
-		@media (max-width: $fullHD){
-		max-width: calc(430px + 160*((100vw - 1500px) / (1920 - 1500)));
-	}
-      // @media (min-width: $tablet) {
-      //    max-width: calc(430 + 160*((100vw - 992px) / (1920 - 992)));
-      // }
+      max-width: calc(500px + 90*((100vw - 1400px) / (1920 - 1400)));
 
       @media (max-width:$tablet) {
          max-width: 430px;
@@ -135,6 +133,7 @@
 
    .list {
       margin: 0 0 30px 15px;
+      margin-bottom: calc(15px + 15*((100vw - 1400px) / (1920 - 1400)));
 
       @media (max-width:$tablet) {
          border-top: 3px solid $textSecondaryColor;
@@ -166,26 +165,30 @@
          width: 20px;
          margin-right: 4px;
          fill: $accentColor;
+
+         @media (max-width:$tablet) {
+            top: 1px;
+         }
       }
    }
 }
 
 .action {
-   text-align: center;
+	text-align: center;
 
-   &__text {
-      font-weight: 500;
-      font-size: rem(25);
-      margin-bottom: 40px;
+	&__text {
+		font-weight: 500;
+		font-size: rem(25);
+		margin-bottom: calc(20px + 20*((100vw - 1400px) / (1920 - 1400)));
 
-      @media (max-width:$pc) {
-         font-size: calc(rem(20) + 5*((100vw - 320px) / (1200 - 320)));
+		@media (max-width:$pc) {
+			font-size: calc(rem(20) + 5*((100vw - 320px) / (1200 - 320)));
 
-         margin-bottom: calc(10px + 30*((100vw - 320px) / (1200 - 320)));
-      }
-   }
+			margin-bottom: calc(10px + 30*((100vw - 320px) / (1200 - 320)));
+		}
+	}
 }
 
 .preload {
-   transition: none !important;
+	transition: none !important;
 }
