@@ -44,6 +44,7 @@ button {
 	cursor: pointer;
 	color: inherit;
 	background-color: transparent;
+	outline: none !important;
 }
 button:active, button:focus, 
 		summary:active, summary:focus {
