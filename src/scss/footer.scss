@@ -42,7 +42,7 @@
 	justify-content: end;
 	position: fixed;
 	z-index: 9;
-	bottom: 80px;
+	bottom: 50px;
 	right: 45px;
 	width: 82px;
 	height: 65px;
@@ -50,12 +50,12 @@
 
 	@media (max-width: $tablet) {
 		right: 25px;
-		bottom: 25px;
+		bottom: 35px;
 	}
 
 	@media (max-width: $mobileSmall) {
 		right: 10px;
-		bottom: 50px;
+		bottom: 30px;
 	}
 }
 
