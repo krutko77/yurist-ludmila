@@ -8,7 +8,7 @@
    justify-content: center;
    align-items: center;
 
-   @media (max-width:$mobile) {
+   @media (max-width: $mobile) {
       padding: 70px 0 30px;
    }
 
@@ -19,6 +19,12 @@
          "name photo"
          "list photo"
       ;
+		margin-bottom: calc(20px + 40*((100vw - 1400px) / (1920 - 1400)));
+		border-bottom: 3px solid $textSecondaryColor;
+
+		@media (max-width: $pcScale) {
+         margin-bottom: 20px;
+      }
 
       @media (max-width: $tablet) {
          grid-template-columns: 1fr;
@@ -28,15 +34,7 @@
             "list";
       }
 
-      margin-bottom: calc(20px + 40*((100vw - 1400px) / (1920 - 1400)));
-
-		@media (max-width:$pcScale) {
-			margin-bottom: 20px;
-		}
-
-      border-bottom: 3px solid $textSecondaryColor;
-
-      @media (max-width:$mobileSmall) {
+		@media (max-width: $mobileSmall) {
          border-bottom: 2px solid $textSecondaryColor;
       }
    }
@@ -68,12 +66,12 @@
       opacity: 0;
       transform: translateY(50px);
 
-		@media (max-width: $pcScale) {
-			font-size: rem(45);
-			margin-bottom: 10px;
-		}
+      @media (max-width: $pcScale) {
+         font-size: rem(45);
+         margin-bottom: 10px;
+      }
 
-      @media (max-width:$pc) {
+      @media (max-width: $pc) {
          font-size: calc(rem(35) + 10*((100vw - 320px) / (1200 - 320)));
          margin-bottom: calc(10px + 10*((100vw - 320px) / (1200 - 320)));
       }
@@ -97,12 +95,12 @@
       opacity: 0;
       transform: translateY(50px);
 
-		@media (max-width: $pcScale) {
-			font-size: rem(30);
-			margin-bottom: 10px;
-		}
+      @media (max-width: $pcScale) {
+         font-size: rem(30);
+         margin-bottom: 10px;
+      }
 
-      @media (max-width:$pc) {
+      @media (max-width: $pc) {
          font-size: calc(rem(18) + 12*((100vw - 320px) / (1200 - 320)));
          margin-bottom: calc(10px + 10*((100vw - 320px) / (1200 - 320)));
       }
@@ -125,16 +123,16 @@
 
    &__img-wrap {
       max-width: calc(450px + 140*((100vw - 1400px) / (1920 - 1400)));
-		
-		@media (max-width: $pcScale) {
-		max-width: 450px;
-		}
 
-      @media (max-width:$tablet) {
+      @media (max-width: $pcScale) {
+         max-width: 450px;
+      }
+
+      @media (max-width: $tablet) {
          max-width: 430px;
       }
 
-      @media (max-width:$mobileSmall) {
+      @media (max-width: $mobileSmall) {
          max-width: 290px;
       }
    }
@@ -150,20 +148,20 @@
       margin: 0 0 30px 15px;
       margin-bottom: calc(5px + 25*((100vw - 1400px) / (1920 - 1400)));
 
-		@media (max-width:$pcScale) {
-			margin-bottom: 5px;
-		}
-
-      @media (max-width:$tablet) {
-         border-top: 3px solid $textSecondaryColor;
-         padding-top: em(25, 20);
-         margin: 0 0 10px 10px;
+      @media (max-width: $pcScale) {
+         margin-bottom: 5px;
       }
 
-      @media (max-width:$mobileSmall) {
+      @media (max-width: $tablet) {
+         border-top: 3px solid $textSecondaryColor;
+         padding-top: em(25, 20);
+         margin: 0 0 10px 0;
+      }
+
+      @media (max-width: $mobileSmall) {
          border-top: 2px solid $textSecondaryColor;
          padding-top: em(15, 20);
-         margin: 0 0 0 10px;
+         margin: 0;
       }
 
       // .list__item
@@ -185,7 +183,7 @@
          margin-right: 4px;
          fill: $accentColor;
 
-         @media (max-width:$tablet) {
+         @media (max-width: $tablet) {
             top: 1px;
          }
       }
@@ -200,7 +198,7 @@
       font-size: rem(25);
       margin-bottom: calc(20px + 20*((100vw - 1400px) / (1920 - 1400)));
 
-      @media (max-width:$pc) {
+      @media (max-width: $pc) {
          font-size: calc(rem(20) + 5*((100vw - 320px) / (1200 - 320)));
 
          margin-bottom: calc(10px + 30*((100vw - 320px) / (1200 - 320)));
