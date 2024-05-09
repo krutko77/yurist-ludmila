@@ -13,21 +13,32 @@
       margin-top: -20px;
 
       @media (max-width: $tablet) {
-          margin-top: -25px;
+         margin-top: -25px;
       }
 
       @media (max-width: $mobile) {
          margin-top: -35px;
       }
 
-		@media (max-width: $mobileSmall) {
-			margin-top: -55px;
-		}
+      @media (max-width: $mobileSmall) {
+         margin-top: -55px;
+      }
    }
 
    &__content {
       display: flex;
       flex-direction: column;
+   }
+
+   &__img-box {
+      overflow: hidden;
+      width: 100%;
+      max-width: 234px;
+      aspect-ratio: 234/344;
+
+      @media (max-width: $mobileSmall) {
+         max-width: 100%;
+      }
    }
 
    &__photo {
@@ -44,11 +55,18 @@
       height: auto;
    }
 
-	figure {
-      max-width: 600px;
+   figure {
+		max-width: 600px;
       text-align: center;
       align-self: center;
    }
+
+	&__img-wrapper {
+		overflow: hidden;
+      width: 100%;
+      max-width: 600px;
+      aspect-ratio: 600/414;
+	}
 
    figcaption {
       padding: 0 em(20, 20);

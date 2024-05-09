@@ -112,8 +112,8 @@
 						<h3 class="services__subtitle services__subtitle-2 subtitle">Боль моих клиентов</h3>
 						<div class="services__video-box">
 							<video width="50" height="50" autoplay loop muted playsinline>
-								<source src="@img/swipe-left/swipe-left.webm" type="video/webm">
-								<source src="@img/swipe-left/swipe-left.mp4" type="video/mp4">
+								<source data-src="@img/swipe-left/swipe-left.webm" type="video/webm">
+								<source data-src="@img/swipe-left/swipe-left.mp4" type="video/mp4">
 							</video>
 						</div>
 					</div>
@@ -124,17 +124,20 @@
 							<!-- Слайд -->
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/1.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/1.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/2.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/2.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/3.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/3.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
@@ -144,22 +147,26 @@
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/5.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/5.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/6.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/6.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/7.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/7.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__image">
-									<img class="swiper__img" src="@img/slider/8.jpg" alt="картинка" width="350" height="500">
+									<img class="swiper__img" data-src="@img/slider/8.jpg" alt="картинка" width="350"
+										height="500">
 								</div>
 							</div>
 						</div>
@@ -195,8 +202,8 @@
 								каждого за обратную связь! Мне ценно ваше мнение! Радуюсь каждой вашей победе!</p>
 							<div class="reviews__video-box">
 								<video width="50" height="50" autoplay loop muted playsinline>
-									<source src="@img/swipe-left/swipe-left.webm" type="video/webm">
-									<source src="@img/swipe-left/swipe-left.mp4" type="video/mp4">
+									<source data-src="@img/swipe-left/swipe-left.webm" type="video/webm">
+									<source data-src="@img/swipe-left/swipe-left.mp4" type="video/mp4">
 								</video>
 							</div>
 						</div>
@@ -258,8 +265,8 @@
 						<div class="about__content">
 							<div class="clearfix">
 								<div class="about__img-box img-box float-left">
-									<img class="about__photo" src="@img/about-photo.jpg" alt="фото автора" width="400"
-										height="591">
+									<img class="about__photo" data-src="@img/about-photo.jpg" alt="фото автора" width="234"
+										height="344">
 								</div>
 								<p class="about__text margin-bottom-20">Я, Людмила Валентинова.<br>Практикующий юрист и
 									нутрициолог. Опыт моей юридической практики 23 года, а опыт практической работы
@@ -281,18 +288,27 @@
 							</div>
 							<h3 class="about__subtitle subtitle margin-bottom-40">Моё образование</h3>
 							<figure class="about__image margin-bottom-30">
-								<img class="about__img" src="@img/about-1.jpg" alt="фото диплома" width="600" height="414">
+								<div class="about__img-wrapper margin-bottom-10">
+									<img class="about__img" data-src="@img/about-1.jpg" alt="фото диплома" width="600"
+										height="414">
+								</div>
 								<figcaption>Диплом Белорусского института правоведения (Минск, 1997 г.)
 									Присвоена квалификация - Юрист</figcaption>
 							</figure>
 							<figure class="about__image margin-bottom-30">
-								<img class="about__img" src="@img/about-2.jpg" alt="фото диплома" width="600" height="414">
+								<div class="about__img-wrapper margin-bottom-10">
+									<img class="about__img" data-src="@img/about-2.jpg" alt="фото диплома" width="600"
+										height="414">
+								</div>
 								<figcaption>Диплом Белорусского государственного университета физической культуры (Минск,
 									2004 г.). Присвоена квалификация - Преподаватель физической культуры / Инструктор по
 									лечебной физической культуре.</figcaption>
 							</figure>
 							<figure class="about__image">
-								<img class="about__img" src="@img/about-3.jpg" alt="фото диплома" width="600" height="414">
+								<div class="about__img-wrapper margin-bottom-10">
+									<img class="about__img" data-src="@img/about-3.jpg" alt="фото диплома" width="600"
+										height="414">
+								</div>
 								<figcaption>Диплом Университета образовательной медицины "PreventAge" (Москва, 2021 г.).
 									Присвоена квалификация - Специалист по модификации образа жизни и немедикаментозному
 									оздоровлению / НealthCoach</figcaption>
