@@ -191,15 +191,19 @@
 }
 
 .action {
-   text-align: center;
+   display: flex;
+	flex-direction: column;
+	align-items: center;
 
    &__text {
+		text-align: center;
+		max-width: 600px;
       font-weight: 500;
       font-size: rem(25);
       margin-bottom: calc(20px + 20*((100vw - 1400px) / (1920 - 1400)));
 
       @media (max-width: $pc) {
-         font-size: calc(rem(20) + 5*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(rem(18) + 7*((100vw - 320px) / (1200 - 320)));
 
          margin-bottom: calc(10px + 30*((100vw - 320px) / (1200 - 320)));
       }

@@ -1,10 +1,10 @@
 // Секции
 section {
-   padding: 170px 0 90px;
+   padding: 120px 0 120px;
 
    @media (max-width:$pc) {
-      padding-top: calc(100px + 70*((100vw - 320px) / (1200 - 320)));
-      padding-bottom: calc(50px + 40*((100vw - 320px) / (1200 - 320)));
+      padding-top: calc(60px + 60*((100vw - 320px) / (1200 - 320)));
+      padding-bottom: calc(60px + 60*((100vw - 320px) / (1200 - 320)));
    }
 }
 

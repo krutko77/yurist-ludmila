@@ -1,51 +1,61 @@
 //about
-.about {  
-	padding: 0;
-   background: url("../img/bg-about-80-2.jpg") center / cover no-repeat;	
-   
-   &__wrapper {
-      padding: 70px 0 40px;
+.about {
+   /* padding-top: 50px; */
+   padding: 0;
+   background: url("../img/bg-about-80-2.jpg") center / cover no-repeat;
 
-		@media (max-width: $tablet) {
-			padding: 40px 0 30px;
-		}
-	
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      margin-top: -20px;
+
+      @media (max-width: $tablet) {
+          margin-top: -25px;
+      }
+
+      @media (max-width: $mobile) {
+         margin-top: -35px;
+      }
+
 		@media (max-width: $mobileSmall) {
-			padding: 10px 0 0;
+			margin-top: -55px;
 		}
    }
 
    &__content {
-		display: flex;
-		flex-direction: column;		
-	}
+      display: flex;
+      flex-direction: column;
+   }
 
-	&__photo {
-		width: 100%;
-		height: auto;
-	}
+   &__photo {
+      width: 100%;
+      height: auto;
+   }
 
-	&__subtitle {
-		align-self: center;
-	}
+   &__subtitle {
+      align-self: center;
+   }
 
-	&__img {
-		width: 100%;
-		height: auto;
-	}
+   &__img {
+      width: 100%;
+      height: auto;
+   }
 
 	figure {
-		max-width: 600px;
-		text-align: center;
-		align-self: center;		
-	}
+      max-width: 600px;
+      text-align: center;
+      align-self: center;
+   }
 
-	figcaption {
-		padding: 0 em(20, 20);
-		font-size: rem(16);		
+   figcaption {
+      padding: 0 em(20, 20);
+      font-size: rem(16);
 
-		@media (max-width:$pc){
-			font-size: calc(rem(13) + 3*((100vw - 320px) / (1200 - 320)));
-   	}
-	}
+      @media (max-width:$pc) {
+         font-size: calc(rem(13) + 3*((100vw - 320px) / (1200 - 320)));
+      }
+   }
 }
